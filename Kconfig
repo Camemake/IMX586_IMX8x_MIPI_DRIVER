@@ -1,0 +1,7 @@
+config VIDEO_IMX586
+	tristate "Sony IMX586 CMOS sensor"
+	depends on I2C && VIDEO_V4L2 && MEDIA_CAMERA_SUPPORT
+	select VIDEO_V4L2_SUBDEV_API
+	select REGMAP_I2C
+	help
+	  V4L2 sub-device driver for Sony IMX586 on NXP i.MX8/9 SoCs.
